@@ -4,8 +4,25 @@
              xmlns:local="clr-namespace:DhamycMaps"
              x:Class="DhamycMaps.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+    <StackLayout Padding="20,40,20,20" x:Name="Principal">
+        <Label 
+           Text="Dhamyc Community!" 
            VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center"
+           />
+        <Button 
+            Text="Get Location"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="GetLocationButton_Clicked"
+            />
+        <ActivityIndicator 
+            x:Name="isBusy"
+            IsRunning="False"
+            IsVisible="False"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+    </StackLayout>
 
 </ContentPage>
